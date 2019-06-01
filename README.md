@@ -1,24 +1,24 @@
-Technical Documentation
+# Technical Documentation
 
 With Installation of Anaconda distribution Python, and the python libraries like Pandas, matplotlib, numpy came inbuilt with the distribution. For this object detection the machine learning library Tensorflow is used, and the development environment Jupyter Notebook as it enables us to break down the heavier script and compile it. The final piece of code is written is Linux Environment. Some of my favourite object detection models are SSD[1], Fast RCNN[2], Faster RCNN[3], YOLO[4]. In this very project I have used SSD, I have explained it in the article, why have I actually done so.
 
-# Protobuf:
+## Protobuf:
 Generally JSON and Protobuf can be used for transferring data between services or system. JSON is comparatively famous than protobuf, as it is more readable, self-contained and extensible, nevertheless it isn’t perfect as in the cases of heavy software like Tensorflow, as it happens to be expensive, and when the serialization and deserialization is at high volume(in the case of Tensorflow), the cost happens to be non-negligible. Protobuf is designed by Google.
 
-# Protobuf Compilation:
+## Protobuf Compilation:
 The tensorflow Object Detection API, uses Protobufs to configure(setup) model and training parameters. Before the framework can be used, the Protobuf libraries must be compiled.
 P.S: This compilation changes the proto file to python file
 
 COCO stands for Common Objects in Context
 
-# Tensorflow detection model zoo
+## Tensorflow detection model zoo
 For object detection, there exists number of models, T/F detection model zoo, provides collection of detection models those are trained on the COCO dataset, Kitti dataset, and Open Image dataset. 
 
 These models are very useful for the out of the box detection/conclusion, if we are based on categorizing the object, it is also supported, as categories already exists in these datasets.
 
 These models can also be used when training on a novel datasets.
 
-# Tensorflow object detection API
+## Tensorflow object detection API
 The Tensorflow object detection API provides us with the number of models trained on COCO dataset. The models are trained on SSD/ Faster RCNN/ Mask RCNN inception.
 So, how should we actually choose the object detection model? Well, it depends primarily in the following factors:
 It depends upon our system to choose the model (H/W support, S/W specifications)
@@ -26,11 +26,13 @@ Accurate prediction in images can be done with the models having higher speed an
 
 The primary reason of choosing SSD(Single Shot MultiBox Detection) is it’s better speed and accuracy in the limited amount of resources.The system uses the TkAgg, with Agg rendering
 
-# Tensorflow works in Graph Principle:- The data flow graph
-[1] SSD: SSD is an unified framework for object detection with a single network
-[2] Fast RCNN: Fast Regional Convolution Neural Network
-[3] Faster RCNN: Faster Regional Convolution Neural Network
-[4] YOLO: You Only Look Once
+## Tensorflow works in Graph Principle
+   :The data flow graph
+   
+SSD: SSD is an unified framework for object detection with a single network [1] 
+Fast RCNN: Fast Regional Convolution Neural Network [2] 
+Faster RCNN: Faster Regional Convolution Neural Network [3]
+YOLO: You Only Look Once [4]
 
 # Efficiency
 The code was run for 5 times taking images of child, cat, jewelry, house and car. The system was able to detect the objects with perfection.
