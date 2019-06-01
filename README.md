@@ -29,10 +29,10 @@ The primary reason of choosing SSD(Single Shot MultiBox Detection) is it’s bet
 ## Tensorflow works in Graph Principle
    :The data flow graph
    
-SSD: SSD is an unified framework for object detection with a single network [1] 
-Fast RCNN: Fast Regional Convolution Neural Network [2] 
-Faster RCNN: Faster Regional Convolution Neural Network [3]
-YOLO: You Only Look Once [4]
+[1] SSD: SSD is an unified framework for object detection with a single network<br/>
+[2] Fast RCNN: Fast Regional Convolution Neural Network<br/>
+[3] Faster RCNN: Faster Regional Convolution Neural Network<br/>
+[4] YOLO: You Only Look Once<br/>
 
 # Efficiency
 The code was run for 5 times taking images of child, cat, jewelry, house and car. The system was able to detect the objects with perfection.
